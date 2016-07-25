@@ -40,12 +40,16 @@ class User extends Component {
         return (
             <div>
                 <UserAdd users={this.state.users} addUser={this.addUser}></UserAdd>
-                    <div className="user-list">
-                    {
-                        this.state.users.map(function(el, index) {
-                            return <UserItem key={index} user={el} delUser={this.delUser}></UserItem>;
-                        }, this)
-                    }
+                
+                    <div className="user-storage">
+                        <h2 className="user-header">Users</h2>
+                        <div className="user-list">
+                        {
+                            this.state.users.map(function(el, index) {
+                                return <UserItem key={index} user={el} delUser={this.delUser}></UserItem>;
+                            }, this)
+                        }
+                        </div>
                     </div>
             </div>
         )

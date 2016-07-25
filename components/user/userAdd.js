@@ -24,8 +24,10 @@ class UserAdd extends Component {
     render() {
         return (
             <div className="user-add">
-                <input onChange={this.handleChange} placeholder="Type name here"/>
-                <button type="button" onClick={this.handleAddUser}>Save user</button>
+                <h2 className="user-header">Add user</h2>
+                
+                <input className="user-add-text control" onChange={this.handleChange} placeholder="Type name here"/>
+                <button className="user-add-btn btn" type="button" onClick={this.handleAddUser}>Save user</button>
             </div>
         )
     }

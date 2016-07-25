@@ -24,7 +24,7 @@ class UserItem extends Component {
                 <span className="user-name">{this.state.name}</span>
                 <span className="user-id">{this.state.id}</span>
                 
-                <button className="user-del-btn" onClick={this.handleDelUser}>Delete</button>
+                <button className="user-del-btn btn" onClick={this.handleDelUser}>Delete</button>
             </div>
         )
     }
