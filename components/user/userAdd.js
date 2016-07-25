@@ -12,9 +12,12 @@ class UserAdd extends Component {
     }
     
     handleAddUser() {
+        let addInput = this.refs.addInput;
         this.props.addUser(this.state.name);
-        this.refs.addInput.value = '';
+        addInput.value = '';
+        addInput.focus();
         this.setState( {name: ''} );
+
     }
 
     shouldComponentUpdate(nextProps, nextState) {
