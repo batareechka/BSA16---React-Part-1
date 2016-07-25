@@ -17,6 +17,7 @@ class User extends Component {
     }
     
     addUser(self, name) {
+        if(name === '') return
         this.state.users.push({ 
             name: name ,
             id: ++this.state.idCounter
